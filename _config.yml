@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: HACKED # the main title
 
-tagline: 해킹해킹해 # it will display as the subtitle
+# tagline: HACKED # it will display as the subtitle
 
 # description: >- # used by seo meta and the atom feed
 #  hhackedd
