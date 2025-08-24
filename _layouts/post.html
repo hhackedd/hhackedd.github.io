@@ -24,7 +24,7 @@ tail_includes:
       <!-- published date -->
       <span>
         {{ site.data.locales[lang].post.posted }}
-        {% include datetime.html date=page.date tooltip=true lang=lang %}
+        {% include datetime.html date=page.date tooltip=false lang=lang %}
       </span>
 
       <!-- lastmod date -->
@@ -34,7 +34,7 @@ tail_includes:
           {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
         </span>
       {% endif %}
-
+      
       {% if page.image %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
@@ -54,6 +54,7 @@ tail_includes:
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
+        <!--
         <span>
           {% if page.author %}
             {% assign authors = page.author %}
@@ -78,6 +79,7 @@ tail_includes:
             {% endif %}
           </em>
         </span>
+        -->
 
         <div>
           <!-- pageviews -->

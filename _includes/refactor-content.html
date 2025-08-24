@@ -197,7 +197,7 @@
       {% capture _label %}
         <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon }}"></i></span>
       {% endcapture %}
-
+      <!--
       {% assign _new_content = _new_content
         | append: _snippet
         | append: '<div class="code-header">'
@@ -207,6 +207,7 @@
         | append: '"><i class="far fa-clipboard"></i></button></div>'
         | append: '<div class="highlight"><code>'
       %}
+      -->
     {% endif %}
   {% endfor %}
 

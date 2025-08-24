@@ -51,7 +51,8 @@ html {
   @extend %code-snippet-bg;
 
   overflow: auto;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   @at-root figure#{&} {
     @extend %code-snippet-bg;
@@ -156,8 +157,8 @@ div[class^='language-'] {
   }
 
   .highlight {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-left-radius: 10;
+    border-top-right-radius: 10;
   }
 }
 
@@ -176,6 +177,10 @@ div {
       }
     }
   }
+}
+
+div.highlighter-rouge .code-header {
+  display: none;
 }
 
 .code-header {
